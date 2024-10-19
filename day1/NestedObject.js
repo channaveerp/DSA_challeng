@@ -3,6 +3,7 @@
 const nestedObj = {
   obj: {
     obj: {
+      your: 'your',
       obj: {
         obj: {
           myName: 'channaveer',
