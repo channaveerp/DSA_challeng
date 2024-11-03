@@ -20,13 +20,15 @@ const arr = [1, 2, 1, 1, 4, 5, 6, 7, 8, 2, 4, 3];
 function dublicate(arr) {
   const seen = new Set();
   const dub = new Set();
-  for (let num of arr) {
-    if (seen.has(num)) {
-      dub.add(num);
+  for (let i = 0; i < arr.length; i++) {
+    if (seen.has(arr[i])) {
+      dub.add(arr[i]);
     } else {
-      seen.add(num);
+      seen.add(arr[i]);
     }
   }
-  return Array.from(dub).join();
+  // return Array.from(dub).join(''); dublicate
+  return Array.from(seen).join(' ');
+  uniuq;
 }
 console.log(dublicate(arr));
